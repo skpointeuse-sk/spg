@@ -137,3 +137,13 @@ h1,h2,h3{text-transform:uppercase}.pc h3,.tile h3,.mh h2,.card h3{text-transform
 .mcd h3{font-size:2rem;margin-bottom:20px}.mcd p{font-size:1.05rem;line-height:1.8}
 .cf2{background:linear-gradient(135deg,#70659A,#4A7C59);border-radius:25px;padding:60px 50px;text-align:center;color:#fff;box-shadow:0 15px 40px rgba(112,101,154,.3)}.cf2 p{font-size:1.5rem;line-height:1.8;margin:0 auto 35px;max-width:900px}
 @media(max-width:768px){.ap{padding:40px 26px}.ap h2{font-size:2rem}.mt{font-size:2.2rem}.mcd{padding:40px 30px}.cf2{padding:45px 26px}.cf2 p{font-size:1.25rem}}
+.pc h3,.mh h2{text-transform:uppercase}.mc{max-width:900px}.mh h2{font-size:clamp(1.5rem,5vw,2.2rem)}.mb{padding:40px}
+.ms{margin-bottom:30px}.ms h3,.mbx h3{font-size:1.5rem;margin-bottom:15px}
+.mbx{background:linear-gradient(135deg,rgba(112,101,154,.08),rgba(74,124,89,.08));padding:25px 30px;border-radius:15px;border-left:4px solid var(--v);margin:25px 0}
+.mpb{background:#F8F4FF;padding:25px 30px;border-radius:15px;margin:30px 0;text-align:center}.mpb .pr{justify-content:center;gap:28px}.mpb .nt{margin-top:15px;font-size:.95rem;font-style:italic}.so2 b{color:var(--v)!important}
+.mb .ml{list-style:none;margin:20px 0}.ml li{padding-left:30px;margin-bottom:12px;position:relative}.ml li:before{content:"→";position:absolute;left:0;color:var(--g);font-weight:700;font-size:1.2rem}
+.mi{width:100%;border-radius:15px;margin-bottom:26px;padding:20px;box-shadow:0 8px 25px rgba(0,0,0,.1)}.dis{font-size:.9rem;font-style:italic}
+.lk{display:flex;gap:10px 24px;flex-wrap:wrap;margin-top:12px}.lk a{color:#999;font-size:.9rem}
+.lg{max-width:900px;margin:auto;background:#fff;border-radius:25px;padding:50px;box-shadow:0 15px 40px rgba(0,0,0,.08);line-height:1.8}.lg h2{font-size:1.4rem;margin:28px 0 10px}.lg p{margin-bottom:12px}.lg ul{margin:10px 0 14px 22px}.lg a{color:var(--v)}
+.ckb{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9999;display:flex;align-items:center;justify-content:center;padding:18px}.ckc{background:#fff;max-width:760px;width:100%;max-height:90vh;overflow:auto;padding:28px;border-radius:6px;font-family:Arial,sans-serif;font-size:.85rem}.ckc h4{text-transform:uppercase;font-size:1rem;margin-bottom:10px}.ckc label{display:block;margin:14px 0 2px;font-weight:700}.ckc small{display:block;margin-left:26px}.ckc .bt{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.ckc button{border:1px solid #000;background:#fff;padding:9px 16px;cursor:pointer;font:inherit}
+@media(max-width:768px){.lg{padding:30px 22px}.mb{padding:28px 22px}}
