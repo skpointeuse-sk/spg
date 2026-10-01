@@ -1,0 +1,10 @@
+import crypto from 'node:crypto';
+import {put,get,list,del} from '@vercel/blob';
+const sign=v=>crypto.createHmac('sha256',process.env.SESSION_SECRET||'').update(v).digest('hex');
+export const makeToken=()=>{const e=Date.now()+12*36e5;return e+'.'+sign('adm'+e)};
+export const isAdmin=req=>{const m=(req.headers.cookie||'').match(/(?:^|; )adm=([^;]+)/);if(!m||!process.env.SESSION_SECRET)return false;const[e,s='']=m[1].split('.');if(Date.now()>+e)return false;const a=Buffer.from(s),b=Buffer.from(sign('adm'+e));return a.length===b.length&&crypto.timingSafeEqual(a,b)};
+export const readJson=async p=>{try{const r=await get(p,{access:'private',useCache:false});return r&&r.stream?JSON.parse(await new Response(r.stream).text()):null}catch{return null}};
+export const writeJson=(p,o)=>put(p,JSON.stringify(o),{access:'private',addRandomSuffix:false,allowOverwrite:true,contentType:'application/json'});
+export const listAll=async prefix=>{const o=[];let cursor;do{const r=await list({prefix,cursor});o.push(...r.blobs);cursor=r.hasMore?r.cursor:undefined}while(cursor);return o};
+export const body=req=>typeof req.body==='string'?JSON.parse(req.body||'{}'):(req.body||{});
+export{del};
