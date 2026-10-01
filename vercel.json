@@ -1,1 +1,102 @@
-{"cleanUrls":true}
+{
+ "cleanUrls": true,
+ "redirects": [
+  {
+   "source": "/pages/avis-temoignages",
+   "has": [
+    {
+     "type": "query",
+     "key": "view",
+     "value": "en-savoir-plus"
+    }
+   ],
+   "destination": "/en-savoir-plus",
+   "permanent": true
+  },
+  {
+   "source": "/pages/avis-temoignages",
+   "has": [
+    {
+     "type": "query",
+     "key": "view",
+     "value": "soins-prestations"
+    }
+   ],
+   "destination": "/prestations",
+   "permanent": true
+  },
+  {
+   "source": "/pages/avis-temoignages",
+   "has": [
+    {
+     "type": "query",
+     "key": "view",
+     "value": "nos-pierres"
+    }
+   ],
+   "destination": "/pierres",
+   "permanent": true
+  },
+  {
+   "source": "/pages/avis-temoignages",
+   "has": [
+    {
+     "type": "query",
+     "key": "view",
+     "value": "blogs"
+    }
+   ],
+   "destination": "/blog",
+   "permanent": true
+  },
+  {
+   "source": "/pages/avis-temoignages",
+   "has": [
+    {
+     "type": "query",
+     "key": "view",
+     "value": "avis-temoignages"
+    }
+   ],
+   "destination": "/avis",
+   "permanent": true
+  },
+  {
+   "source": "/pages/avis-temoignages",
+   "has": [
+    {
+     "type": "query",
+     "key": "view",
+     "value": "prendre-rdv"
+    }
+   ],
+   "destination": "/rdv",
+   "permanent": true
+  },
+  {
+   "source": "/pages/avis-temoignages",
+   "destination": "/avis",
+   "permanent": true
+  },
+  {
+   "source": "/pages/contact",
+   "destination": "/contact",
+   "permanent": true
+  },
+  {
+   "source": "/pages/a-propos",
+   "destination": "/en-savoir-plus",
+   "permanent": true
+  },
+  {
+   "source": "/pages/seances-soins",
+   "destination": "/prestations",
+   "permanent": true
+  },
+  {
+   "source": "/pages/blogs",
+   "destination": "/blog",
+   "permanent": true
+  }
+ ]
+}
