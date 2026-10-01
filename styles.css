@@ -165,3 +165,8 @@ h1,h2,h3{text-transform:uppercase}.pc h3,.tile h3,.mh h2,.card h3{text-transform
 .art label{display:block;font-weight:600;margin-top:6px}.art input:not([type=hidden]),.art textarea{width:100%;padding:14px 16px;border:2px solid #eee;border-radius:15px;font:inherit;margin:6px 0 14px}
 .tb{display:flex;flex-wrap:wrap;gap:6px;padding:10px;background:#F8F4FF;border-radius:12px 12px 0 0;border:2px solid #eee;border-bottom:0}.tb button,.tb select{padding:7px 12px;border:1px solid #d8d2ec;border-radius:8px;background:#fff;cursor:pointer;font:inherit}
 .ed{min-height:380px;border:2px solid #eee;border-radius:0 0 12px 12px;padding:20px;line-height:1.8;background:#fff}.ed:focus{outline:0;border-color:var(--v)}.ed img{max-width:100%;border-radius:10px}.fc input[type=file]{padding:10px}
+.b.sm{padding:6px 16px;font-size:.75rem;border:0;cursor:pointer;margin:2px 2px 0 0}
+.au{background:var(--v);color:#fff;border-radius:20px;padding:2px 10px;font-size:.7rem;margin-left:8px}.rp2{font-size:.9rem;color:var(--v);font-weight:600;text-decoration:underline}.rt{color:var(--g);margin-bottom:8px}
+.ah{margin:26px 0 10px;font-size:1.25rem}.nb{background:#fff3cd;color:#8a6d00;padding:2px 10px;border-radius:12px;font-size:.8rem;margin-left:6px}
+.rpb{margin-top:10px}.rpb textarea{width:100%;padding:10px 14px;border:2px solid #eee;border-radius:12px;font:inherit;margin-bottom:8px}
+.cfm p{margin:10px 0 18px;font-size:1rem;line-height:1.6}.cfm .d{background:#c0392b;color:#fff;border-color:#c0392b}
