@@ -185,3 +185,9 @@ h1,h2,h3{text-transform:uppercase}.pc h3,.tile h3,.mh h2,.card h3{text-transform
 .rz>div{background:#fff;border-radius:18px;padding:26px;box-shadow:0 8px 25px rgba(0,0,0,.08);border-left:4px solid var(--v);line-height:1.6}
 .rz i{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.4rem;margin-bottom:14px;background:linear-gradient(135deg,var(--v),#8A7BAD)}
 .rz .hot{border-left-color:#E4663B}.rz .hot i{background:linear-gradient(135deg,#F58529,#E4405F)}.rz h3{font-size:1.4rem;margin-bottom:8px}
+
+.bub{position:relative;overflow:hidden;background:linear-gradient(135deg,#70659A,#4A7C59);color:#fff;border-radius:30px;padding:34px 40px 34px 112px;box-shadow:0 15px 40px rgba(112,101,154,.3);max-width:900px;margin:10px auto 0;min-height:110px;display:flex;align-items:center}
+.bub p{font-size:1.2rem;line-height:1.7;position:relative;z-index:1;margin:0}
+.bub i{position:absolute;left:32px;top:50%;transform:translateY(-50%);width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:1.7rem;box-shadow:0 0 0 8px rgba(255,255,255,.1)}
+.bub:after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;border:2px dashed rgba(255,255,255,.2);top:-90px;right:-70px;animation:spin 30s linear infinite}
+@media(max-width:700px){.bub{padding:100px 24px 30px;text-align:center}.bub i{top:28px;left:50%;transform:translateX(-50%)}.bub p{font-size:1.05rem}}
